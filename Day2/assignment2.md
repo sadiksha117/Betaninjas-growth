@@ -1,4 +1,4 @@
-# Assignment 2 — Test This Feature
+# Assignment 2 - Test This Feature
 **Name:** Sadiksha Gyawali  
 **Feature:** Task Submission  
 **Product:** Betaninjas SEO LMS  
@@ -12,7 +12,7 @@
 - CHECKBOX task submission and toggle behaviour
 - TEXT task submission, empty validation, and revision
 - LINK task submission and URL validation
-- Task state transitions — Not Started → In Progress → Submitted / Completed
+- Task state transitions - Not Started → In Progress → Submitted / Completed
 - Progress percentage update on phase page and dashboard after submission
 
 ### What I am not testing
@@ -57,7 +57,7 @@ Testing is complete when:
 **Steps:**
 1. Log in as a member
 2. Navigate to any LINK type task
-3. Paste a valid URL — e.g. `https://www.hubspot.com/certificate/abc`
+3. Paste a valid URL - e.g. `https://www.hubspot.com/certificate/abc`
 4. Click "Submit Link"
 5. Return to the phase page
 6. Return to the dashboard
@@ -104,7 +104,7 @@ Testing is complete when:
 3. Type a first response — e.g. `This is my first answer`
 4. Click Submit
 5. Return to the same task
-6. Clear the textarea and type a new response — e.g. `This is my revised answer`
+6. Clear the textarea and type a new response - e.g. `This is my revised answer`
 7. Click Submit again
 8. Return to the task once more
 
@@ -154,8 +154,8 @@ Testing is complete when:
 - No dropdown interaction is needed
 
 **Result:** Fail   
-**Actual behaviour:** Clicking the checkbox directly does nothing. The only way to change the task status is by manually selecting "Done" from a dropdown menu. The dropdown also uses the label "Done" which does not match the spec's defined states — the spec defines "Completed" for CHECKBOX tasks, not "Done."  
-**Note:** This passes verification loosely — the status does eventually change — but it fails validation completely. A real user expects one click to complete a checkbox task as the spec describes. Having to open a dropdown and manually select a status defeats the purpose of a checkbox entirely and introduces the risk of members setting their own status without actually doing the work.
+**Actual behaviour:** Clicking the checkbox directly does nothing. The only way to change the task status is by manually selecting "Done" from a dropdown menu. The dropdown also uses the label "Done" which does not match the spec's defined states - the spec defines "Completed" for CHECKBOX tasks, not "Done."  
+**Note:** This passes verification loosely - the status does eventually change - but it fails validation completely. A real user expects one click to complete a checkbox task as the spec describes. Having to open a dropdown and manually select a status defeats the purpose of a checkbox entirely and introduces the risk of members setting their own status without actually doing the work.
 
 ---
 
@@ -176,6 +176,6 @@ Testing is complete when:
 Both failing test cases (TC02 and TC05) are examples where the feature passes a surface-level check but fails when tested against real user expectations:
 
 - **TC02** - `https://a` has the correct URL prefix format, so it passes basic format validation. But no real user submits `https://a` as a certificate link. The validation is not meaningful enough to protect data quality.
-- **TC05** - The task status does change eventually via the dropdown, so the underlying state logic works. But the spec explicitly says "one click to complete" — a dropdown is not one click, and it allows members to mark tasks done without any real interaction with the checkbox. The intended behaviour is broken even though the data layer is functioning.
+- **TC05** - The task status does change eventually via the dropdown, so the underlying state logic works. But the spec explicitly says "one click to complete" - a dropdown is not one click, and it allows members to mark tasks done without any real interaction with the checkbox. The intended behaviour is broken even though the data layer is functioning.
 
 These are the most valuable findings from this test session.
