@@ -1,4 +1,4 @@
-# Assignment 3 — Our Last Sprint — Honest Look
+# Assignment 3 - Our Last Sprint - Honest Look
 **Name:** Sadiksha  
 **Sprint:** TalkTravel - Recent iOS/Web Sprint  
 **Date:** June 16, 2026  
