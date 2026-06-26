@@ -1,4 +1,4 @@
-# Assignment 3 - Document It Like It Matters
+# Assignment- Document It Like It Matters
 
 Target: Dashboard feature - betaninjas-seo-learning-tracker.vercel.app
 
